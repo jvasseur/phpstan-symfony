@@ -11,6 +11,8 @@ This extension provides following features:
 * Provides correct return type for `ContainerInterface::get()` and `::has()` methods.
 * Provides correct return type for `Controller::get()` and `::has()` methods.
 * Provides correct return type for `Request::getContent()` method based on the `$asResource` parameter.
+* Provides correct return type for `DenormalizeInterface::denormalize()` method.
+* Provides correct return type for `SerializerInterface::deserialize()` method.
 * Notifies you when you try to get an unregistered service from the container.
 * Notifies you when you try to get a private service from the container.
 

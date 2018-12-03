@@ -45,3 +45,13 @@ services:
 	-
 		class: PHPStan\Type\Symfony\HeaderBagDynamicReturnTypeExtension
 		tags: [phpstan.broker.dynamicMethodReturnTypeExtension]
+
+	# DenormalizerInterface::denormalize() return type
+	-
+		class: PHPStan\Type\Symfony\DenormalizerInterfaceDynamicReturnTypeExtension
+		tags: [phpstan.broker.dynamicMethodReturnTypeExtension]
+
+	# SerializerInterface::deserialize() return type
+	-
+		class: PHPStan\Type\Symfony\SerializerInterfaceDynamicReturnTypeExtension
+		tags: [phpstan.broker.dynamicMethodReturnTypeExtension]
